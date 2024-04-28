@@ -1,0 +1,1107 @@
+{
+	"info": {
+		"_postman_id": "84c8be5e-d895-4285-bcf7-d63090bed97f",
+		"name": "Web-project-api-testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34210886"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api/login/",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"swnazzy\",\r\n    \"password\": \"swnaz1107\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/login/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEzNjgxNjE4LCJpYXQiOjE3MTM2ODEzMTgsImp0aSI6IjY3NmEyZTkzN2YwZjRhYmJhZGYxZTYzN2ZjOGZkMzE1IiwidXNlcl9pZCI6MX0.OGhydZdNVwoqhyF8BXMXnH4Oq2yyKilxOtJNlrp2gpE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"unknown_student\",\r\n    \"password\": \"unauthorized\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/refresh/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEzNjgxNjE4LCJpYXQiOjE3MTM2ODEzMTgsImp0aSI6IjY3NmEyZTkzN2YwZjRhYmJhZGYxZTYzN2ZjOGZkMzE1IiwidXNlcl9pZCI6MX0.OGhydZdNVwoqhyF8BXMXnH4Oq2yyKilxOtJNlrp2gpE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"refresh\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxMzc2NzcxOCwiaWF0IjoxNzEzNjgxMzE4LCJqdGkiOiIyYjAzN2RmZGVjOTA0YzVkOTVlZjdmNjgyOWNjNjY4OSIsInVzZXJfaWQiOjF9.KsKPc2H6IbRAS9BiTK_949Xd_TOGoDCK2y7jxi7VYqY\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/refresh/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"refresh",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/logout/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer   eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEzNjgyMzM0LCJpYXQiOjE3MTM2ODEzMTgsImp0aSI6IjU3YzlmOTExNDI4MDQzMTg4MjdkMjRlZDQwMzVmNzdmIiwidXNlcl9pZCI6MX0.yT1eWn4WTfHXbs4Yy3WcjtnCUQOggA2o1CJxzz7JYjs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/logout/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"logout",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/tasks/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer     eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEzNjgyMzM0LCJpYXQiOjE3MTM2ODEzMTgsImp0aSI6IjU3YzlmOTExNDI4MDQzMTg4MjdkMjRlZDQwMzVmNzdmIiwidXNlcl9pZCI6MX0.yT1eWn4WTfHXbs4Yy3WcjtnCUQOggA2o1CJxzz7JYjs",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/tasks/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tasks",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/tasks/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer       eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEzNjgyNzYzLCJpYXQiOjE3MTM2ODI0NjMsImp0aSI6IjMwZjEzYjQ1MGRjYTQxZjI5N2Q5YjlhMzdiMDBiYjlhIiwidXNlcl9pZCI6MX0.WmzNdsb5y0_08fLwou_OtIZztq0vtX9CZIJVqiAMCbA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"author\": \r\n        1\r\n    ,\r\n    \"name\": \r\n        \"Statistics.\"\r\n    ,\r\n    \"statement\": \r\n        \"Prove Central Limit Theorem\"\r\n    ,\r\n    \"start_time\": \r\n        \"2024-04-20\"\r\n    ,\r\n    \"points\": \r\n        5\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/tasks/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tasks",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/tasks/10",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEzNjgzMDU4LCJpYXQiOjE3MTM2ODI3NTgsImp0aSI6IjI5NmE2Nzg5ZDFlOTQ4N2NhYTdmZmNiMWExNmMyYmM4IiwidXNlcl9pZCI6MX0.I5q8-7NXAdIGvQ-a_qUrRqD-wmy6XS2CGihlC9yWKpM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/tasks/10",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tasks",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/tasks/10",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEzNjgzMDU4LCJpYXQiOjE3MTM2ODI3NTgsImp0aSI6IjI5NmE2Nzg5ZDFlOTQ4N2NhYTdmZmNiMWExNmMyYmM4IiwidXNlcl9pZCI6MX0.I5q8-7NXAdIGvQ-a_qUrRqD-wmy6XS2CGihlC9yWKpM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"author\": 1, \"name\": \"Prove\", \"statement\": \"Prove Chain Rule\", \"start_time\": \"2024-03-10\",\"points\": 3}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/tasks/10",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tasks",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/tasks/10",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEzNjgzMDU4LCJpYXQiOjE3MTM2ODI3NTgsImp0aSI6IjI5NmE2Nzg5ZDFlOTQ4N2NhYTdmZmNiMWExNmMyYmM4IiwidXNlcl9pZCI6MX0.I5q8-7NXAdIGvQ-a_qUrRqD-wmy6XS2CGihlC9yWKpM",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/tasks/10",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tasks",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/solutions/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/solutions/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"solutions",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/refresh/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEzNjgzMDU4LCJpYXQiOjE3MTM2ODI3NTgsImp0aSI6IjI5NmE2Nzg5ZDFlOTQ4N2NhYTdmZmNiMWExNmMyYmM4IiwidXNlcl9pZCI6MX0.I5q8-7NXAdIGvQ-a_qUrRqD-wmy6XS2CGihlC9yWKpM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"refresh\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxMzc2OTE1OCwiaWF0IjoxNzEzNjgyNzU4LCJqdGkiOiI2ZmNhMmY1NTRjY2M0MmVmOTE0NGJjNmIzYWFmYmU3MiIsInVzZXJfaWQiOjF9.3nIJUa9KNdVK8iRlqdjNfUehoC-t2uoCXAcgd2ErJtI\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/refresh/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"refresh",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/solutions/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEzNjgzNTcxLCJpYXQiOjE3MTM2ODI3NTgsImp0aSI6ImE1NjIzMzcwY2ZiYTQ5YTg5MzFjMDFiMWIyYmJhNGIzIiwidXNlcl9pZCI6MX0.A335czARf7IFOBDxU2GdrAUfWVowFV5Ff6sLRdUCo2Y",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"author\": 1, \r\n\"submit_time\": \"2024-04-21\",\r\n\"content\": \"Solution\", \r\n\"task\": 3,\r\n\"points\": 1}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/solutions/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"solutions",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/solutions/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/solutions/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"solutions",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/login/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEzNjgzMDU4LCJpYXQiOjE3MTM2ODI3NTgsImp0aSI6IjI5NmE2Nzg5ZDFlOTQ4N2NhYTdmZmNiMWExNmMyYmM4IiwidXNlcl9pZCI6MX0.I5q8-7NXAdIGvQ-a_qUrRqD-wmy6XS2CGihlC9yWKpM",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\": \"swnazzy\", \"password\": \"swnaz1107\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/solutions/6",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEzNjgzOTU1LCJpYXQiOjE3MTM2ODI3NTgsImp0aSI6IjU3OWNhYmUzZWQ5NDQ4M2RiMzM4NDRmMDA3MDk2N2ZjIiwidXNlcl9pZCI6MX0.WQKcyPx4IobRSqvYlyaeRL1sZVgloXrCgWFLOjKXZFs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"author\": 1,\r\n\"submit_time\": \"2024-04-15\",\r\n\"content\": \"Some Solutions\",\r\n\"task\": 1, \r\n\"points\": 1}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/solutions/6",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"solutions",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/solutions/6",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEzNjgzOTU1LCJpYXQiOjE3MTM2ODI3NTgsImp0aSI6IjU3OWNhYmUzZWQ5NDQ4M2RiMzM4NDRmMDA3MDk2N2ZjIiwidXNlcl9pZCI6MX0.WQKcyPx4IobRSqvYlyaeRL1sZVgloXrCgWFLOjKXZFs",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/solutions/6",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"solutions",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/tasks/1/solutions",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEzNjgzOTU1LCJpYXQiOjE3MTM2ODI3NTgsImp0aSI6IjU3OWNhYmUzZWQ5NDQ4M2RiMzM4NDRmMDA3MDk2N2ZjIiwidXNlcl9pZCI6MX0.WQKcyPx4IobRSqvYlyaeRL1sZVgloXrCgWFLOjKXZFs",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/tasks/1/solutions",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tasks",
+						"1",
+						"solutions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/comments/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEzNjg0MzQyLCJpYXQiOjE3MTM2ODQwNDIsImp0aSI6IjZmZTAxNTU1Y2ZjNjQ5ZjQ4ZDE2N2RjYTllOGNmZWE2IiwidXNlcl9pZCI6MX0.nPU-m4518rIX2xDp1dPD-BvmRf1Pep7J3DdkdKcQnmI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"user\": 3,\r\n\"content\": \"Interesting task! \",\r\n\"votes\": 3,\r\n\"task\": 3\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/comments/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"comments",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/comments/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEzNjg0MzQyLCJpYXQiOjE3MTM2ODQwNDIsImp0aSI6IjZmZTAxNTU1Y2ZjNjQ5ZjQ4ZDE2N2RjYTllOGNmZWE2IiwidXNlcl9pZCI6MX0.nPU-m4518rIX2xDp1dPD-BvmRf1Pep7J3DdkdKcQnmI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/comments/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"comments",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/comments/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEzNjg0MzQyLCJpYXQiOjE3MTM2ODQwNDIsImp0aSI6IjZmZTAxNTU1Y2ZjNjQ5ZjQ4ZDE2N2RjYTllOGNmZWE2IiwidXNlcl9pZCI6MX0.nPU-m4518rIX2xDp1dPD-BvmRf1Pep7J3DdkdKcQnmI",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/comments/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"comments",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/comments/3",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEzNjg0NzQ0LCJpYXQiOjE3MTM2ODQ0NDQsImp0aSI6IjJkMDdkNWYxMGNjNzRhZDI5ZDQ2MmE0NmFmMTJiMjIyIiwidXNlcl9pZCI6MX0.2G4eE-w3ERfVbDmlvD-H2H8p2pNrH9vZUKH75h7QzHE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"user\": 1,\r\n\"content\": \"interefsing\",\r\n\"votes\": 2,\r\n\"task\": 1}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/comments/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"comments",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/comments/3",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEzNjg0NzQ0LCJpYXQiOjE3MTM2ODQ0NDQsImp0aSI6IjJkMDdkNWYxMGNjNzRhZDI5ZDQ2MmE0NmFmMTJiMjIyIiwidXNlcl9pZCI6MX0.2G4eE-w3ERfVbDmlvD-H2H8p2pNrH9vZUKH75h7QzHE",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/comments/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"comments",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/tasks/1/comments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/tasks/1/comments",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tasks",
+						"1",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/refresh/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEzNjg0NzQ0LCJpYXQiOjE3MTM2ODQ0NDQsImp0aSI6IjJkMDdkNWYxMGNjNzRhZDI5ZDQ2MmE0NmFmMTJiMjIyIiwidXNlcl9pZCI6MX0.2G4eE-w3ERfVbDmlvD-H2H8p2pNrH9vZUKH75h7QzHE",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"refresh\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTcxMzc3MDg0NCwiaWF0IjoxNzEzNjg0NDQ0LCJqdGkiOiI4YTRiM2NhYmMwZDU0ZWQ2YWVhOTQwYTBiMmYyMWJhNyIsInVzZXJfaWQiOjF9.74zP7bTYsJ56la66ibhjEqykm_DQ9vwYUV_ZXkrW39k\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/refresh/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"refresh",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/users/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEzNjg1MTE3LCJpYXQiOjE3MTM2ODQ0NDQsImp0aSI6IjRiMjA1ZTYyNWY3YTQ3MWFiODYyYWRmODBlMDg2NTRjIiwidXNlcl9pZCI6MX0.0991DF3TC09e8QJkzWEmwQgBydNz0iFrm1IMf4zmRZo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/users/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/users/1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEzNjg1MTE3LCJpYXQiOjE3MTM2ODQ0NDQsImp0aSI6IjRiMjA1ZTYyNWY3YTQ3MWFiODYyYWRmODBlMDg2NTRjIiwidXNlcl9pZCI6MX0.0991DF3TC09e8QJkzWEmwQgBydNz0iFrm1IMf4zmRZo",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/users/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/rating/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/rating/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"rating",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/profiles/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/profiles/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"profiles",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/profiles/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEzNjg2MjY5LCJpYXQiOjE3MTM2ODUyMDcsImp0aSI6ImNkYmQwMmNhMWMyZjQxYzM5NWE0YjRkNjY4ZjU3ZmNkIiwidXNlcl9pZCI6MX0.zLp76TuhN1lcckVoUX2zPMh5xpiiETFSk_E4vUNoMK8",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"bio\": \"jshhbxhbxbx\",\r\n    \"points\": 1,\r\n    \"user\": 20\r\n    \r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/profiles/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"profiles",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/login/",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzEzNjg1MTE3LCJpYXQiOjE3MTM2ODQ0NDQsImp0aSI6IjRiMjA1ZTYyNWY3YTQ3MWFiODYyYWRmODBlMDg2NTRjIiwidXNlcl9pZCI6MX0.0991DF3TC09e8QJkzWEmwQgBydNz0iFrm1IMf4zmRZo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"username\": \"swnazzy\",\r\n\r\n\"password\": \"swnaz1107\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/profiles/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/profiles/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"profiles",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/profiles/1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"bio\": \"Love love tanks\",\r\n\"points\": 3,\r\n\"user\": 1}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/profiles/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"profiles",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/profiles/1/rank",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/profiles/1/rank",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"profiles",
+						"1",
+						"rank"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
